@@ -16,7 +16,7 @@ const MoviesDetails = () => {
   useEffect(() => {
     getData();
     window.scrollTo(0, 0);
-  }, []);
+  }, [getData]);
 
   const getData = async () => {
     try {
