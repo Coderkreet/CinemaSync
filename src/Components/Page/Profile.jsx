@@ -3,6 +3,7 @@ import axios from "axios";
 import { motion } from "framer-motion";
 import { debounce } from "lodash";
 import { Search, Star, Film, Award } from 'lucide-react';
+import Spinner from "../Spinner/Spinner";
 
 const API_KEY = "e2353e8be47078e49467938753585fc2";
 
@@ -120,7 +121,7 @@ const Profile = () => {
       </motion.div>
 
       {loading && actors.length === 0 ? (
-        <p className="text-center text-gray-400">Loading...</p>
+        <p className=" flex justify-center items-center  text-gray-400"><Spinner/></p>
       ) : (
         <motion.div
           variants={containerVariants}

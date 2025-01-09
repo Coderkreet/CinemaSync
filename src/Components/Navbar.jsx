@@ -131,7 +131,7 @@ const Navbar = () => {
           <div
             className={`${
               menuOpen ? 'block' : 'hidden'
-            } absolute top-full font-thin text-[0.8rem] left-0 w-full bg-gray-900 bg-opacity-90 md:bg-transparent md:static md:flex gap-x-5 text-lg text-white`}
+            } absolute top-full font-thin text-[0.7rem] left-0 w-full bg-gray-900 bg-opacity-90 md:bg-transparent md:static md:flex gap-x-5 text-lg text-white`}
           >
             <Link
               to="/about"
